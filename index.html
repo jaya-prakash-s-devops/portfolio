@@ -160,14 +160,14 @@
               <span class="expertise-icon">⚙️</span>
               <div>
                 <strong>CI/CD Automation</strong>
-                <p>GitHub Actions pipelines for infrastructure and application deployments</p>
+                <p>GitHub Actions pipelines for build, release, and infrastructure automation</p>
               </div>
             </li>
             <li>
               <span class="expertise-icon">🐳</span>
               <div>
                 <strong>Containerization</strong>
-                <p>Docker, Docker Compose, Docker Hub, containerized app deployments</p>
+                <p>Docker, Docker Hub, Kubernetes, containerized application deployments</p>
               </div>
             </li>
             <li>
@@ -228,7 +228,7 @@
             <span class="skill-level primary">Core Strength</span>
           </div>
           <div class="skill-tags">
-            <span class="tag">GitHub Actions</span><span class="tag">Automated Deployments</span>
+            <span class="tag">GitHub Actions</span><span class="tag">Build &amp; Release Pipelines</span>
           </div>
         </div>
 
@@ -263,7 +263,7 @@
           <div class="skill-cat-header">
             <span class="skill-cat-icon">☸️</span>
             <h3>Container Orchestration</h3>
-            <span class="skill-level secondary">Kubernetes Fundamentals</span>
+            <span class="skill-level secondary">Kubernetes Deployment &amp; Orchestration</span>
           </div>
           <div class="skill-tags">
             <span class="tag">Kubernetes</span><span class="tag">Pods</span>
@@ -423,9 +423,9 @@
         <div class="project-header">
           <div class="project-number">02</div>
           <div class="project-meta">
-            <h3 class="project-title">Container-Based Task Management Platform</h3>
+            <h3 class="project-title">Kubernetes-Based DevOps Task Platform</h3>
             <p class="project-desc">
-              Built and deployed a containerized task management application using Flask, MySQL, Docker Compose, Nginx, GitHub Actions, Docker Hub, and AWS EC2 — featuring a <strong>fully automated CI/CD pipeline</strong> with zero-touch deployments.
+              Designed and deployed a multi-tier DevOps Task Platform using Flask, MySQL, Docker, Kubernetes, GitHub Actions, and Docker Hub. Implemented a CI pipeline that automatically builds, tags, versions, and publishes Docker images to Docker Hub on every code push, with Kubernetes Deployments, Services, ConfigMaps, Secrets, Namespaces, and Ingress managing application deployment, networking, configuration, and service exposure.
             </p>
           </div>
         </div>
@@ -436,23 +436,40 @@
             <h4 class="arch-title">Architecture Flow</h4>
             <div class="flow-steps">
               <div class="flow-step">
-                <div class="flow-icon">🌐</div>
-                <span>Frontend</span>
+                <div class="flow-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <span>Developer Push</span>
               </div>
               <div class="flow-arrow">→</div>
               <div class="flow-step">
-                <div class="flow-icon">🔒</div>
-                <span>Nginx Proxy</span>
+                <div class="flow-icon">🔄</div>
+                <span>GitHub Actions</span>
               </div>
               <div class="flow-arrow">→</div>
               <div class="flow-step">
-                <div class="flow-icon">🐍</div>
-                <span>Flask Backend</span>
+                <div class="flow-icon">🐳</div>
+                <span>Docker Build</span>
+              </div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step">
+                <div class="flow-icon">🏷️</div>
+                <span>Image Versioning</span>
+              </div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step">
+                <div class="flow-icon">📦</div>
+                <span>Docker Hub</span>
+              </div>
+              <div class="flow-arrow">→</div>
+              <div class="flow-step">
+                <div class="flow-icon">☸️</div>
+                <span>Kubernetes Cluster</span>
               </div>
               <div class="flow-arrow">→</div>
               <div class="flow-step live">
-                <div class="flow-icon">🗄️</div>
-                <span>MySQL DB</span>
+                <div class="flow-icon">🚀</div>
+                <span>Live Application</span>
               </div>
             </div>
           </div>
@@ -461,32 +478,38 @@
             <div class="achievements">
               <h4>Key Achievements</h4>
               <ul class="achievement-list">
-                <li><span class="check">✓</span> Automated CI/CD pipeline</li>
-                <li><span class="check">✓</span> Dockerized architecture</li>
-                <li><span class="check">✓</span> AWS EC2 deployment</li>
-                <li><span class="check">✓</span> Zero-touch deployments</li>
-                <li><span class="check">✓</span> Reverse proxy security</li>
-                <li><span class="check">✓</span> Version-controlled releases</li>
+                <li><span class="check">✓</span> Automated Docker image build pipeline</li>
+                <li><span class="check">✓</span> Automated Docker image tagging and versioning</li>
+                <li><span class="check">✓</span> Docker Hub image publishing</li>
+                <li><span class="check">✓</span> Kubernetes Deployments and Services</li>
+                <li><span class="check">✓</span> ConfigMaps and Secrets management</li>
+                <li><span class="check">✓</span> Ingress-based application routing</li>
+                <li><span class="check">✓</span> Multi-tier Flask and MySQL architecture</li>
+                <li><span class="check">✓</span> Containerized production-style deployment</li>
               </ul>
             </div>
 
             <div class="project-stack">
               <h4>Tech Stack</h4>
               <div class="stack-tags">
+                <span class="stag k8s">Kubernetes</span>
                 <span class="stag dk">Docker</span>
-                <span class="stag dk">Docker Compose</span>
-                <span class="stag aws">AWS EC2</span>
+                <span class="stag dkh">Docker Hub</span>
+                <span class="stag ga">GitHub Actions</span>
                 <span class="stag py">Flask</span>
                 <span class="stag db">MySQL</span>
-                <span class="stag ng">Nginx</span>
-                <span class="stag ga">GitHub Actions</span>
+                <span class="stag ing">Ingress</span>
+                <span class="stag cfg">ConfigMaps</span>
+                <span class="stag sec">Secrets</span>
+                <span class="stag lx">Linux</span>
+                <span class="stag yml">YAML</span>
               </div>
             </div>
           </div>
         </div>
 
         <div class="project-footer">
-          <a href="https://github.com/jaya-prakash-s-devops/devops-task-platform" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+          <a href="https://github.com/jaya-prakash-s-devops/kubernetes-devops-task-platform" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
             View on GitHub
           </a>

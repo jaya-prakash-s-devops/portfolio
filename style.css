@@ -745,6 +745,12 @@ button { cursor: pointer; border: none; background: none; }
 .stag.py  { background: rgba(52,152,219,0.12); color: #3498DB; border: 1px solid rgba(52,152,219,0.2); }
 .stag.db  { background: rgba(0,117,143,0.15); color: #00758F; border: 1px solid rgba(0,117,143,0.25); }
 .stag.ng  { background: rgba(9,161,61,0.12); color: #099A3D; border: 1px solid rgba(9,161,61,0.2); }
+.stag.k8s { background: rgba(50,108,229,0.12); color: #326CE5; border: 1px solid rgba(50,108,229,0.25); }
+.stag.dkh { background: rgba(13,183,237,0.12); color: #0DB7ED; border: 1px solid rgba(13,183,237,0.2); }
+.stag.ing { background: rgba(0,150,136,0.12); color: #009688; border: 1px solid rgba(0,150,136,0.2); }
+.stag.cfg { background: rgba(156,39,176,0.12); color: #9C27B0; border: 1px solid rgba(156,39,176,0.2); }
+.stag.sec { background: rgba(229,57,53,0.12); color: #E53935; border: 1px solid rgba(229,57,53,0.2); }
+.stag.yml { background: rgba(255,87,34,0.12); color: #FF5722; border: 1px solid rgba(255,87,34,0.2); }
 
 .project-footer { border-top: 1px solid var(--border); padding-top: 20px; }
 
